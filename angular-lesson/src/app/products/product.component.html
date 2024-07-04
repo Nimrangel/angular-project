@@ -1,0 +1,22 @@
+<h2> Testing for Product</h2>
+<div class="productcli"></div>
+
+
+<p>Testing for adding product {{addProductStatus}} </p>
+<button class="btn btn-secondary" (click)="onClick()"> Add a product </button>
+
+
+
+
+
+
+<!-- 1 way binding -->
+<label> Product Name: 1 way binding</label>
+<input type="text" class="form-control" (input)="onUpdateProductName($event)" >
+<!-- <p>{{enteredValue}}</p> -->
+
+
+<!-- 2 way binding -->
+
+<label>Product Name: 2 way binding</label>
+<input type="text" class="form-control" [(ngModel)]="enteredValue">
